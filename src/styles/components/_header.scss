@@ -1,0 +1,109 @@
+.main-header {
+  position: fixed;
+  background: white;
+  width: 100%;
+  z-index: 10;
+  margin-top: 0;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo {
+  font-size: 40px;
+  margin: 0;
+  padding-top: 0px;
+  color: #ffce54;
+  text-shadow: 2px 2px 2px grey;
+  // text-shadow: 2px 2px 2px black;
+  text-decoration: none;
+  z-index: 100;
+}
+
+ul {
+    height: 30px;
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+  }
+  
+  .header-a {
+    font-size: 20px;
+    color: $brown;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 6px;
+  
+     &:before,
+      &:after {
+          content: '';
+          position: absolute;
+          bottom: 2px;
+          left: 0; right: 0;
+          height: 2px;
+          background-color: $red;
+      }
+      &:before {
+          opacity: 0;
+          transform: translateY(- $distance);
+          transition: transform 0s $easeOutBack, opacity 0s;
+      }
+      &:after {
+          opacity: 0;
+          transform: translateY($distance/2);
+          transition: transform $duration $easeOutBack, opacity $duration;
+      }
+      &:hover,
+      &:focus {
+          &:before,
+          &:after {
+              opacity: 1;
+              transform: translateY(0);
+          }
+          &:before {
+              transition: transform $duration $easeOutBack, opacity $duration;
+          }
+          &:after {
+              transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+          }
+      }
+  }
+
+  .buy-button {
+	  display: inline-block;
+    background: #ffce54;
+    border-radius: 4px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+    padding: 8px 40px;
+  }
+  
+  @media (max-width: 799px) {
+    ul {
+      li {
+        display: none;
+      }
+    }
+
+    .nav-bar {
+      justify-content: flex-start;
+    }
+
+    .logo {
+      padding-left: 20px;
+    }
+  }
