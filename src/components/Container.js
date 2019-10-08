@@ -4,6 +4,7 @@ import Header from './Header';
 import Modal from './Modal';
 import Backdrop from './Backdrop';
 import { textWithTitle } from '../data/data';
+import Fade from 'react-reveal/Fade';
 
 class Container extends React.Component {
 
@@ -14,6 +15,10 @@ class Container extends React.Component {
 
     componentDidMount() {
         document.addEventListener('mousedown', this.closeOutside, false);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('mousedown', this.closeOutside, false);
     }
 
     showModal = () => {
