@@ -10,9 +10,9 @@ const Header = (props) => (
             <a className="logo" href="#">LOGO</a>
             <ul className="list">
                 <li><a href='#' className="header-a">Home</a></li>
-                <li><a href='#' className="header-a">Moon</a></li>
+                <li><a href='#train' className="header-a">Moon</a></li>
                 <li><a href='#' className="header-a">Earth</a></li>
-                <li><a href='#' className="header-a">Contact</a></li>
+                <li><a className="header-a" onClick={props.showModal}>Contact</a></li>
                 <li><a href='#' className="buy-button sink-on-hover">Buy</a></li>
             </ul>
         </nav>

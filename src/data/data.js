@@ -30,7 +30,7 @@ export const textWithTitle = [
         text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex',
         icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="38px" height="59px">
             <title>electric train</title>
-            <g>
+            <g className="train" id="train">
                 <path d="M12,14H4a1,1,0,0,1-1-1V5.5A2.5,2.5,0,0,1,5.5,3h5A2.5,2.5,0,0,1,13,5.5V13A1,1,0,0,1,12,14Zm0-1v0ZM5.5,4A1.5,1.5,0,0,0,4,5.5V13h8V5.5A1.5,1.5,0,0,0,10.5,4Z" />
                 <path d="M5.52,12a.5.5,0,0,1-.5-.5.5.5,0,0,1,.5-.5h.01a.5.5,0,0,1,0,1Z" />
                 <path d="M10.52,12a.5.5,0,0,1-.5-.5.5.5,0,0,1,.5-.5h.01a.5.5,0,0,1,0,1Z" />
@@ -67,7 +67,7 @@ export const textWithTitle = [
         text: 'Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu.',
         icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="38px" height="59px">
             <title>cruise ship</title>
-            <g>
+            <g id="ship">
                 <path d="M12,16a1.785,1.785,0,0,1-1.381-.676.765.765,0,0,0-1.232-.008,1.782,1.782,0,0,1-2.768.008.765.765,0,0,0-1.232-.008,1.782,1.782,0,0,1-2.768.008.765.765,0,0,0-1.232-.008.5.5,0,0,1-.768-.641,1.786,1.786,0,0,1,2.762,0,.765.765,0,0,0,1.232.008,1.782,1.782,0,0,1,2.768-.008.765.765,0,0,0,1.232.008,1.782,1.782,0,0,1,2.768-.008.765.765,0,0,0,1.232.008,1.782,1.782,0,0,1,2.768-.008.5.5,0,0,1-.768.641.767.767,0,0,0-1.227,0A1.789,1.789,0,0,1,12,16Z" />
                 <path d="M12.2,15.98a.508.508,0,0,1-.18-.033.5.5,0,0,1-.287-.646l2.107-5.48L8,8.023,2.159,9.82,4.267,15.3a.5.5,0,0,1-.934.359l-2.3-5.98a.5.5,0,0,1,.319-.657l6.5-2a.506.506,0,0,1,.295,0l6.5,2a.5.5,0,0,1,.319.657l-2.3,5.98A.5.5,0,0,1,12.2,15.98Z" />
                 <path d="M12.5,9.38a.5.5,0,0,1-.5-.5V4h-.5a.5.5,0,0,1-.5-.5V2H5V3.5a.5.5,0,0,1-.5.5H4V8.88a.5.5,0,0,1-1,0V3.5A.5.5,0,0,1,3.5,3H4V1.5A.5.5,0,0,1,4.5,1h7a.5.5,0,0,1,.5.5V3h.5a.5.5,0,0,1,.5.5V8.88A.5.5,0,0,1,12.5,9.38Z" />
