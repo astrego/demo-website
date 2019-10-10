@@ -9,7 +9,9 @@ import {CSSTransition } from 'react-transition-group';
 // Nog te doen:
 // 3: Layout Modal aanpassen, meer lezen over flex
 // 4: Moon en Earth pagina's toevoegen met mooie foto's plus React Navigation
-// 5: Uploaden naar https://surge.sh/
+// 5: Zorgen dat alle bundle.js files in gitignore komen
+// 6: Uploaden naar https://surge.sh/
+// 7: Zorgen dat er altijd gerouted wordt naar index.html ook als je een verkeerd adres invoert.
 
 class Container extends React.Component {
 
