@@ -1,4 +1,4 @@
-.Modal {
+.modal {
     position: fixed;
     z-index: 200;
     border: 1px solid #eee;
@@ -13,18 +13,23 @@
     left: 25%;
     width: 50%;
     height: 30%;
-    transition: all 0.3s ease-out;
+    
 }
 
-.ModalOpen {
-    // opacity: 1;
-    display: block;
-}
-
-.ModalClosed {
-    // opacity: 0;
-    display: none;
-}
+.modal-enter {
+    opacity: 0;
+  }
+  .modal-enter-active {
+    opacity: 1;
+    transition: opacity 600ms;
+  }
+  .modal-exit {
+    opacity: 1;
+  }
+  .modal-exit-active {
+    opacity: 0;
+    transition: opacity 400ms;
+  }
 
 .modal-container {
     margin-top: 10px;
@@ -59,7 +64,7 @@
 }
 
 @media (min-width: 600px) {
-    .Modal {
+    .modal {
         width: 500px;
         left: calc(50% - 250px);
     }

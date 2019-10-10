@@ -83,14 +83,27 @@ ul {
   }
 
   .buy-button {
-	  display: inline-block;
+    box-sizing: border-box;
+    display: inline-block;
     background: #ffce54;
     border-radius: 4px;
     font-size: 20px;
+    // text-transform: uppercase;
+    // text-decoration: none;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 8px 20px;
+  }
+
+  .buy-button-link {
+    color: $brown;
     text-transform: uppercase;
     text-decoration: none;
-    margin: 0;
-    padding: 8px 40px;
+  }
+
+  .github-icon {
+    vertical-align: top;
+    margin-right: 8px;
   }
   
   @media (max-width: 799px) {
