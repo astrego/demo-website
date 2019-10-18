@@ -17,7 +17,7 @@
   font-size: 40px;
   margin: 0;
   padding-top: 0px;
-  color: #ffce54;
+  color: $yellow;
   text-shadow: 2px 2px 2px grey;
   // text-shadow: 2px 2px 2px black;
   text-decoration: none;
@@ -85,11 +85,9 @@ ul {
   .buy-button {
     box-sizing: border-box;
     display: inline-block;
-    background: #ffce54;
+    background: $yellow;
     border-radius: 4px;
     font-size: 20px;
-    // text-transform: uppercase;
-    // text-decoration: none;
     margin: 0;
     margin-bottom: 5px;
     padding: 8px 20px;

@@ -30,9 +30,18 @@ module.exports = {
                     loader: 'postcss-loader'
                 }   
             ]
+        }, {
+            test: /\.(png|jpg|gif)$/,
+             use: [
+            {
+                loader: 'file-loader',
+                options: {}
+            }
+        ]
         }]
     },
     devServer: {
-        contentBase: path.join(__dirname, 'public')
+        contentBase: path.join(__dirname, 'public'),
+        historyApiFallback: true
     }
 }

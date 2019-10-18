@@ -3,7 +3,7 @@
     z-index: 200;
     border: 1px solid #eee;
     // box-shadow: 0 2px 12px #ccc;
-    box-shadow: 5px 5px 5px #aaaaaa;
+    // box-shadow: 5px 5px 5px #aaaaaa;
     background-color: white;
     padding: 10px;
     text-align: center;
@@ -51,7 +51,7 @@
 }
 
 .modal-icon {
-    background: #ffce54;
+    background: $yellow;
     margin-right: 10px;
     padding: 5px 5px;
 }

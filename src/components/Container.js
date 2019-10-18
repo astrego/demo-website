@@ -1,88 +1,27 @@
 import React from 'react';
 import Element from './Element';
-import Header from './Header';
-import Modal from './Modal';
-import Backdrop from './Backdrop';
+import Footer from './Footer';
+
 import { textWithTitle } from '../data/data';
-import {CSSTransition } from 'react-transition-group';
+
+
 
 // Nog te doen:
-// 3: Layout Modal aanpassen, meer lezen over flex
-// 4: Moon en Earth pagina's toevoegen met mooie foto's plus React Navigation
+// 1: Layout Modal aanpassen, meer lezen over flex
+// 2: Als je nu in de modal klikt dat verdwijnt hij, mag alleen via het kruisje of buiten de modal
+// 3: Menu mobile werkt ook nog niet helemaal goed, buiten menu klikken werkt niet.
+// 4: Menu voor kleine schermen nog koppelen met Navlinks
+// 5: Github link in het hoofdmenu, het github svg is geen link, alleen de text ernaast
 // 5: Zorgen dat alle bundle.js files in gitignore komen
 // 6: Uploaden naar https://surge.sh/
 // 7: Zorgen dat er altijd gerouted wordt naar index.html ook als je een verkeerd adres invoert.
 
 class Container extends React.Component {
 
-    state = {
-        open: false,
-        modalIsOpen: false
-    }
-
-    componentDidMount() {
-        document.addEventListener('mousedown', this.closeOutside, false);
-    }
-
-    componentWillUnmount() {
-        document.removeEventListener('mousedown', this.closeOutside, false);
-    }
-
-    showModal = () => {
-        console.log("showModal()");
-        this.setState({modalIsOpen: true});
-      }
-    
-    closeModal = () => {
-        console.log("closeModal()")
-        this.setState({modalIsOpen: false});
-    }
-
-    setClose = () => {
-        console.log("setClose()");
-        this.setState(() => ({
-            open: false
-        }));
-    };
-
-    setOpen = () => {
-        console.log("setOpen()");
-        this.setState(() => ({
-            open: true
-        }))
-    }
-
-    closeOutside = (e) => {
-        console.log("closeOutside()")
-        if ((this.node) && (this.node.contains(e.target)) && (this.state.open || this.state.modalIsOpen)) {
-            this.setState(() => ({
-                open: false,
-                modalIsOpen: false,
-            }));
-        }
-        this.closeModal();
-    }
-
     render() {
         console.log("render()")
         return (
-            
-            <div  >
-                <Header  open={this.state.open} setOpen={this.setOpen} setClose={this.setClose} showModal={this.showModal}/>
-                <CSSTransition
-                    in={this.state.modalIsOpen}
-                    timeout={500}
-                    unmountOnExit
-                    classNames="modal">
-                    <Modal closed={this.closeModal}/>
-                </CSSTransition>
-                <CSSTransition 
-                    in={this.state.modalIsOpen}
-                    timeout={500}
-                    unmountOnExit
-                    classNames="backdrop">
-                    <Backdrop/>
-                </CSSTransition>
+            <div>
                 <div className="main" ref={node => this.node = node}>
                     {textWithTitle.map((item, key) => (
                         <div className="block" key={key}>
@@ -90,6 +29,7 @@ class Container extends React.Component {
                         </div>
                     ))}
                 </div>
+                <Footer />
             </div>
         )
     }

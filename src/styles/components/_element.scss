@@ -58,15 +58,15 @@
   transform: translateY(2px);
 }
 
-@keyframes rocket {
-  0%, 10%  {opacity: 0}
-  25%, 85% {opacity: 1}
-  100%     {opacity: 0}
-}
+// @keyframes rocket {
+//   0%, 10%  {opacity: 0}
+//   25%, 85% {opacity: 1}
+//   100%     {opacity: 0}
+// }
 
-.rocket {
-  animation: rocket 5s ease infinite;
-}
+// .rocket {
+//   animation: rocket 5s ease infinite;
+// }
 
 @media (min-width: 500px) {
   .container {

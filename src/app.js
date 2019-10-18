@@ -4,7 +4,7 @@ import 'normalize.css/normalize.css';
 
 import './styles/styles.scss';
 
-import Container from './components/Container';
+import Router from './routers/Router';
 
 
-ReactDOM.render(<Container/>, document.getElementById('app'));
+ReactDOM.render(<Router/>, document.getElementById('app'));
