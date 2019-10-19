@@ -62,7 +62,7 @@ class Header extends React.Component {
             <div>
                 <div className="main-header">
                     <Burger open={this.state.open} setOpen={this.setOpen} setClose={this.setClose} />
-                    <Menu open={this.state.open} setOpen={this.setOpen} setClose={this.setClose} />
+                    <Menu open={this.state.open} setOpen={this.setOpen} setClose={this.setClose} showModal={this.showModal}/>
                     <nav className="nav-bar">
                         <a className="logo" href="#">LOGO</a>
                         <ul className="list">

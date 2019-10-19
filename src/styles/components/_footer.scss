@@ -22,6 +22,11 @@
 
 .footer-list {
     margin: 0;
+    padding-left: 0px;
+}
+
+.footer-list-social {
+    padding-left: 0px;
 }
 
 .footer-item {
@@ -56,6 +61,10 @@
        flex-direction: row;
        justify-content: space-around;
        height: 200px;
+   }
+
+   .footer-list {
+    margin-top: 10px;
    }
 
     .footer-item {

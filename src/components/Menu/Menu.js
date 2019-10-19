@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Menu = (props) => {
 
@@ -9,10 +10,14 @@ const Menu = (props) => {
 
     return (
         <div className={cssClasses.join(' ')}>
-            <a className="menu-a" href="#" onClick={props.setClose}>Home</a>
-            <a className="menu-a" href="#" onClick={props.setClose}>Moon</a>
-            <a className="menu-a" href="#" onClick={props.setClose}>Earth</a>
-            <a className="menu-a" href="#" onClick={props.setClose}>Contact</a>
+            <NavLink to="/" exact={true} className="menu-a"  onClick={props.setClose}>Home</NavLink>
+            <NavLink to="/moon" className="menu-a" onClick={props.setClose}>Moon</NavLink>
+            <NavLink to="/earth" className="menu-a" onClick={props.setClose}>Earth</NavLink>
+            <a className="menu-a" href="#" onClick={() => {
+                props.showModal();
+                props.setClose();
+            }}>Contact</a>
+            <a className="menu-a" href="https://github.com/astrego/demo-website" onClick={props.setClose}>Github</a>
         </div>
     );
 };
