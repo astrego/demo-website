@@ -23,24 +23,20 @@ class Header extends React.Component {
     }
 
     showModal = () => {
-        console.log("showModal()");
         this.setState({modalIsOpen: true});
       }
     
     closeModal = () => {
-        console.log("closeModal()")
         this.setState({modalIsOpen: false});
     }
 
     setClose = () => {
-        console.log("setClose()");
         this.setState(() => ({
             open: false
         }));
     };
 
     setOpen = () => {
-        console.log("setOpen()");
         this.setState(() => ({
             open: true
         }))
@@ -48,19 +44,19 @@ class Header extends React.Component {
 
     closeOutside = (e) => {
         console.log("closeOutside()")
-        if ((this.node) && (this.node.contains(e.target)) && (this.state.open || this.state.modalIsOpen)) {
+        if ((this.node) && (!this.node.contains(e.target)) && (this.state.open || this.state.modalIsOpen)) {
             this.setState(() => ({
                 open: false,
                 modalIsOpen: false,
             }));
         }
-        this.closeModal();
+        
     }
 
     render() {
         return (
-            <div>
-                <div className="main-header">
+            <div >
+                <div className="main-header" ref={node => this.node = node}>
                     <Burger open={this.state.open} setOpen={this.setOpen} setClose={this.setClose} />
                     <Menu open={this.state.open} setOpen={this.setOpen} setClose={this.setClose} showModal={this.showModal}/>
                     <nav className="nav-bar">

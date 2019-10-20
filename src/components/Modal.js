@@ -8,10 +8,9 @@ const Modal = (props) => {
                 <path d="M0 0h18v18H0zm0 0h18v18H0z" fill="none" />
                 <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
             </svg></a>
-
+            
             <div className="modal-container">
-            <h2 className="modal-title">Contact</h2>
-                <div className="modal-element">
+                    <h2 className="modal-title">Contact</h2>
                     <svg className="modal-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20">
                         <title>dial phone</title>
                         <g>
@@ -30,10 +29,8 @@ const Modal = (props) => {
                             <rect x="9.5" y="13" width="1" height="1" />
                         </g>
                     </svg>
-                    <p>+31 622 88 99</p>
-                </div>
+                    <p className="modal-p">+31 622 88 99</p>
 
-                <div className="modal-element">
                     <svg className="modal-icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20">
                         <title>email</title>
                         <g>
@@ -43,8 +40,7 @@ const Modal = (props) => {
                             <path d="M.5,13.5a.5.5,0,0,1-.3-.9l6.14-4.5a.5.5,0,1,1,.591.807L.8,13.4A.5.5,0,0,1,.5,13.5Z" />
                         </g>
                     </svg>
-                    <p>demo@demo.com</p>
-                </div>
+                    <p className="modal-p">demo@demo.com</p>
             </div>
         </div>
     );
