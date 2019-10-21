@@ -39,7 +39,7 @@ const Footer = () => (
                         <circle cx="12.5" cy="3.5" r="0.5" fill="none" stroke="#000" strokeMiterlimit="10" />
                     </g>
                 </svg></a></li>
-                <li className="footer-item"><a href="#" className="footer-social sink-on-hover"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px">
+                <li className="footer-item"><a href="https://github.com/astrego/demo-website" target="_blank" className="footer-social sink-on-hover"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px">
                     <title>github</title>
                     <path d="M8,.5A7.522,7.522,0,0,0,5.63,15.154c.375.069.512-.163.512-.362,0-.179-.007-.651-.01-1.279C4.045,13.967,3.6,12.5,3.6,12.5a1.988,1.988,0,0,0-.832-1.1c-.681-.467.052-.457.052-.457a1.575,1.575,0,0,1,1.148.775,1.6,1.6,0,0,0,2.183.625,1.608,1.608,0,0,1,.476-1.005c-1.665-.19-3.416-.835-3.416-3.716a2.91,2.91,0,0,1,.772-2.018,2.709,2.709,0,0,1,.073-1.99s.63-.2,2.063.771a7.087,7.087,0,0,1,3.756,0c1.432-.973,2.06-.771,2.06-.771a2.705,2.705,0,0,1,.075,1.99,2.906,2.906,0,0,1,.771,2.018c0,2.888-1.754,3.524-3.424,3.71a1.8,1.8,0,0,1,.509,1.392c0,1.005-.009,1.816-.009,2.063,0,.2.135.435.516.361A7.523,7.523,0,0,0,8,.5Z" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" />
                 </svg></a></li>
