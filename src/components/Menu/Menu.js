@@ -17,7 +17,7 @@ const Menu = (props) => {
                 props.showModal();
                 props.setClose();
             }}>Contact</a>
-            <a className="menu-a" href="https://github.com/astrego/demo-website" onClick={props.setClose}>Github</a>
+            <a href="https://github.com/astrego/demo-website" target="_blank" className="menu-a" onClick={props.setClose}>Github</a>
         </div>
     );
 };
