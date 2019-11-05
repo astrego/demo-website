@@ -1,4 +1,5 @@
 import React from 'react';
+import Proptypes from 'prop-types';
 
 const Burger = (props) => {
 
@@ -17,5 +18,11 @@ const Burger = (props) => {
         </div>
     );
 };
+
+Burger.propTypes = {
+    open: Proptypes.bool,
+    setOpen: Proptypes.func,
+    setClose: Proptypes.func
+}
 
 export default Burger;

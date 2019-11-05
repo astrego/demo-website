@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Proptypes from 'prop-types';
 
 const Menu = (props) => {
 
@@ -21,5 +22,11 @@ const Menu = (props) => {
         </div>
     );
 };
+
+Menu.propTypes = {
+    open: Proptypes.bool,
+    setClose: Proptypes.func
+
+}
 
 export default Menu;

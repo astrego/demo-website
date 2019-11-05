@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Backdrop = (props) => {
+const Backdrop = () => {
 
     return <div className="backdrop"></div>;
 }

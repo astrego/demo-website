@@ -1,4 +1,6 @@
 import React from 'react';
+import Proptypes from 'prop-types';
+
 import Fade from 'react-reveal/Fade';
 
 const Element = (props) => (
@@ -12,5 +14,11 @@ const Element = (props) => (
         </div>
     </div>
 );
+
+Element.propTypes = {
+    title: Proptypes.string,
+    text: Proptypes.string,
+    icon: Proptypes.object
+}
 
 export default Element;

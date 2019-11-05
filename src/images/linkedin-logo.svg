@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16px" height="16px">
+    <title>linkedin</title>
+    <g>
+        <rect x="0.5" y="6" width="3.354" height="9.5" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M12.991,6.121c-.035-.011-.07-.023-.107-.033s-.09-.018-.136-.027a3,3,0,0,0-.6-.061h0a4.661,4.661,0,0,0-3.6,1.972V6H5.188v9.5H8.541V10.688s2.535-3.53,3.6-.937V15.5H15.5V9.354A3.346,3.346,0,0,0,12.991,6.121Z" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="2.141" cy="2.141" r="1.641" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" />
+    </g>
+</svg>
