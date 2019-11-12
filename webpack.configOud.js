@@ -1,10 +1,8 @@
 const path = require('path');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     devtool: 'source-map',
-    entry: path.join(__dirname, "src", "app.js"),
+    entry:'./src/app.js',
     output: {
         path: path.join(__dirname, 'public'),
         filename: 'bundle.js'
@@ -20,22 +18,17 @@ module.exports = {
             test: /\.s?css$/,
             use: [
                 {
-                    loader: MiniCssExtractPlugin.loader
+                    loader: 'style-loader'
                 },
                 {
                     loader: 'css-loader'
                 },
                 {
-                    loader: 'postcss-loader',
-                    options: {
-                        config: {
-                            path: 'postcss.config.js'
-                        }
-                    }
-                },
-                {
                     loader: 'sass-loader'
                 },
+                {
+                    loader: 'postcss-loader'
+                }   
             ]
         }, {
             test: /\.svg$/,
@@ -54,16 +47,5 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, 'public'),
         historyApiFallback: true
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            filename: "index.html",
-            template: path.join(__dirname, "src", "index.html"),
-            favicon: "src/images/favicon.png"
-        }),
-        new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css"
-        })
-    ]
+    }
 }

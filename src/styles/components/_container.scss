@@ -13,9 +13,15 @@
 
 @media (min-width: 450px) {
   .block {
+    height: 700px;
     width: 100%;
-    height: 100%;
     padding-top: 0px;
+  }
+}
+
+@media (max-width: 449px) {
+  .block {
+    padding-bottom: 20px;
   }
 }
 

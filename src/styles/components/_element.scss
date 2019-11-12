@@ -11,6 +11,7 @@
 .paragraph {
     color: #fff;
     font-family: sans-serif;
+    font-size: 18px;
     font-weight: 100;
     margin-top: 0;
     text-align: left;
@@ -58,18 +59,14 @@
   transform: translateY(2px);
 }
 
-// @keyframes rocket {
-//   0%, 10%  {opacity: 0}
-//   25%, 85% {opacity: 1}
-//   100%     {opacity: 0}
-// }
-
-// .rocket {
-//   animation: rocket 5s ease infinite;
-// }
-
 @media (min-width: 500px) {
   .container {
     flex-direction: row;
+  }
+}
+
+@media (max-width: 450px) {
+  .paragraph {
+    font-size: 14px;
   }
 }

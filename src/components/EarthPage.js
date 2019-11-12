@@ -3,7 +3,7 @@ import Earth from '../images/earth.jpg';
 import Footer from './Footer';
 
 const backgroundSytle = {
-    height: "75%",
+    height: "500px",
     backgroundImage: `url(${Earth})`,
     backgroundAttachment: "fixed",
     bacgroundPosition: "center",
@@ -13,7 +13,7 @@ const backgroundSytle = {
 
 const EarthPage = () => (
     <div className="earth-main">
-    <div className="parallax" style={backgroundSytle}></div>
+    <div style={backgroundSytle}></div>
     <div className="moon-text-div">
         <div className="moon-text">
         “Look again at that dot. That's here. That's home. 
@@ -27,7 +27,7 @@ const EarthPage = () => (
         every teacher of morals, every corrupt politician, every "superstar," 
         every "supreme leader," every saint and sinner in the history of our 
         species lived there-on a mote of dust suspended in a sunbeam.
-        <span>Carl Sagan</span>
+        <p className="moon-text-source">Carl Sagan</p>
         </div>
     </div>
     <div className="parallax" style={backgroundSytle}></div>
