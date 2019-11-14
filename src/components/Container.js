@@ -5,10 +5,9 @@ import Footer from './Footer';
 import { textWithTitle } from '../data/data';
 
 // Nog te doen:
-// 1: Als je nu in de modal klikt dat verdwijnt hij, mag alleen via het kruisje of buiten de modal
-// 2: Een slankere en moderne font vinden
-// 3: Uploaden naar https://surge.sh/
-// 4: Zorgen dat er altijd gerouted wordt naar index.html ook als je een verkeerd adres invoert.
+// 1: Een slankere en moderne font vinden
+// 2: Uploaden naar https://surge.sh/
+// 3: Zorgen dat er altijd gerouted wordt naar index.html ook als je een verkeerd adres invoert.
 
 class Container extends React.Component {
 
