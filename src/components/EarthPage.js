@@ -16,6 +16,7 @@ const EarthPage = () => (
     <div style={backgroundSytle}></div>
     <div className="moon-text-div">
         <div className="moon-text">
+        Available for free on the App Store
         “Look again at that dot. That's here. That's home. 
         That's us. On it everyone you love, everyone you know, 
         everyone you ever heard of, every human being who ever was, 

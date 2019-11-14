@@ -5,9 +5,8 @@ import Footer from './Footer';
 import { textWithTitle } from '../data/data';
 
 // Nog te doen:
-// 1: Een slankere en moderne font vinden
-// 2: Uploaden naar https://surge.sh/
-// 3: Zorgen dat er altijd gerouted wordt naar index.html ook als je een verkeerd adres invoert.
+// 1: Uploaden naar https://surge.sh/
+// 2: Zorgen dat er altijd gerouted wordt naar index.html ook als je een verkeerd adres invoert.
 
 class Container extends React.Component {
 

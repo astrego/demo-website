@@ -36,11 +36,11 @@
 }
 
 .modal-title {
-    font-family: sans-serif;
+    font-family: "museo-sans", sans-serif;
     text-align: left;
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: 100;
+    font-weight: 400;
     grid-column-start: 1;
     grid-column-end: 3;
     margin-left: 10px;
@@ -53,7 +53,9 @@
 }
 
 .modal-p {
-     text-align: left;
+    font-family: "museo-sans-rounded", sans-serif;
+    font-weight: 300;
+    text-align: left;
 }
 
 .close-x {

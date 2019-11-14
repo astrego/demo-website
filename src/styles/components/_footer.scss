@@ -11,11 +11,13 @@
 
 .footer-company-name {
     color: $yellow;
+    font-family: "museo-sans",sans-serif;
     font-size: 24px;
     text-shadow: 2px 2px 2px grey;
 }
 
 .footer-address-line {
+    font-family: "museo-sans-rounded",sans-serif;
     color: white;
     font-weight: 100;
 }
@@ -54,6 +56,8 @@
     margin: 0;
     margin-bottom: 5px;
     padding: 8px 16px;
+    padding-bottom: 6px;
+
 }
 
 @media (min-width: 800px) {
