@@ -2,21 +2,16 @@ import React from 'react';
 import Earth from '../images/earth.jpg';
 import Footer from './Footer';
 
-const backgroundSytle = {
-    height: "500px",
+const backgroundStyle = {
     backgroundImage: `url(${Earth})`,
     backgroundAttachment: "fixed",
-    bacgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    backgroundSize: "cover"
 }
 
 const EarthPage = () => (
     <div className="earth-main">
-    <div style={backgroundSytle}></div>
-    <div className="moon-text-div">
+    <div className="earth-text-div" style={backgroundStyle}>
         <div className="moon-text">
-        Available for free on the App Store
         “Look again at that dot. That's here. That's home. 
         That's us. On it everyone you love, everyone you know, 
         everyone you ever heard of, every human being who ever was, 
@@ -31,7 +26,6 @@ const EarthPage = () => (
         <p className="moon-text-source">Carl Sagan</p>
         </div>
     </div>
-    <div className="parallax" style={backgroundSytle}></div>
         <Footer />
     </div> 
 );

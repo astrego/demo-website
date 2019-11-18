@@ -5,16 +5,12 @@
     height: 100%;
 }
 
-.parallax-moon {
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-}
-
 .moon-text-div {
     display: flex;
     flex-direction: column;
-    background: black;
+    height: 800px;
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -23,11 +19,14 @@
     padding: 48px 0;
     margin: auto;
     text-align: center;
-    width: 50%;
-    background-color: black;
+    width: 70%;
+    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
+    letter-spacing: 0.025em;
     font-size: 20px;
     font-family: "museo-sans", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
     color: white;
 }
@@ -37,12 +36,16 @@
     font-size: 18px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     .moon-text {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .moon-text-source {
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    .moon-text-div {
+        height: 500px;
     }
 }

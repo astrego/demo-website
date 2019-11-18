@@ -5,14 +5,12 @@ import Footer from './Footer';
 const backgroundStyle = {
 
     backgroundImage: `url(${Moon})`,
-    backgroundAttachment: "fixed",
     backgroundRepeat: "no-repeat",
 }
 
 const MoonPage = () => (
     <div className="moon-main">
-        <div className="parallax-moon" style={backgroundStyle}></div>
-        <div className="moon-text-div">
+        <div className="moon-text-div" style={backgroundStyle}>
             <div className="moon-text">
             “The moon does not fight. It attacks no one. 
             It does not worry. It does not try to crush others. 
@@ -22,8 +20,7 @@ const MoonPage = () => (
             to its nature and its power is never diminished.” 
             <p className="moon-text-source">Deng Ming-Dao</p>
             </div>
-        </div>
-        <div className="parallax-moon" style={backgroundStyle}></div>
+            </div>
         <Footer />
     </div>
 );
