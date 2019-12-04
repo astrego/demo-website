@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
+import { render } from 'react-snapshot';
 import 'normalize.css/normalize.css';
 
 import './styles/styles.scss';
@@ -7,4 +8,4 @@ import './styles/styles.scss';
 import Router from './routers/Router';
 
 
-ReactDOM.render(<Router/>, document.getElementById('app'));
+render(<Router/>, document.getElementById('app'));

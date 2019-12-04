@@ -6,7 +6,7 @@ module.exports = {
     devtool: 'source-map',
     entry: path.join(__dirname, "src", "app.js"),
     output: {
-        path: path.join(__dirname, 'public'),
+        path: path.join(__dirname, 'build'),
         filename: 'bundle.js'
     },
     module: {
@@ -52,7 +52,7 @@ module.exports = {
         }]
     },
     devServer: {
-        contentBase: path.join(__dirname, 'public'),
+        contentBase: path.join(__dirname, 'build'),
         historyApiFallback: true
     },
     plugins: [
