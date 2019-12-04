@@ -8,8 +8,8 @@ class Container extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="main">
+            <div className="main">
+                <div className="item">
                     {textWithTitle.map((item, key) => (
                         <div className="block" key={key}>
                             <Element text={item.text} title={item.title} icon={item.icon}/>
